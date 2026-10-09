@@ -6,6 +6,12 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oppo/sdm660-common
 
 PRODUCT_COPY_FILES += \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/ashdr/ncf_pack.ncf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ashdr/ncf_pack.ncf \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/ashdr/ncf_pack.ncf:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/ashdr/ncf_pack.ncf \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_900p_video_0.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_900p_video_0.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_900p_video_0_s5k2p7sq.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_900p_video_0_s5k2p7sq.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_1350p_video_0.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_1350p_video_0.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_1350p_video_0_s5k2p7sq.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_1350p_video_0_s5k2p7sq.config \
     vendor/oppo/sdm660-common/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/oppo/sdm660-common/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/oppo/sdm660-common/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
@@ -187,47 +193,32 @@ PRODUCT_PACKAGES += \
     libqcvirt \
     vendor.qti.hardware.mwqemadapter@1.0 \
     btaudio_offload_if \
-    camera.sdm660 \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
+    libOppoPreviewBokeh \
     libPolarrRender \
-    libStDualCam \
-    libVDUpScale \
+    libSTDualCamPreviewBokeh \
+    libSTdisp \
+    libSonyIMX376RmscLibrary \
     libadm \
     libadpcmdec \
-    libarc_sensor_adapter \
-    libarcsoft_aiscenedetection \
-    libarcsoft_beautyshot \
-    libarcsoft_blink_detection \
-    libarcsoft_blink_detection_CoupleDis \
-    libarcsoft_detection_base \
     libarcsoft_dualcam_bokeh_api \
-    libarcsoft_dualcam_portrait_shot \
-    libarcsoft_dualcam_portraitlighting \
     libarcsoft_dualcam_refocus \
-    libarcsoft_dualcam_refocus_left \
-    libarcsoft_dualcam_refocus_preview \
-    libarcsoft_dualcam_refocus_right \
-    libarcsoft_hdr_couple_api \
     libarcsoft_hdr_denoise_api \
     libarcsoft_high_dynamic_range \
-    libarcsoft_high_dynamic_range_couple \
     libarcsoft_low_light_hdr \
-    libarcsoft_picbest \
-    libarcsoft_relighting_pro_image \
     libarcsoft_smart_denoise \
-    libarcsoft_videostabilizer \
-    libarcvs.dep \
-    libarcvs \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
+    libblur_channel \
     libcamera_core_hwi \
     libfastcrc \
-    libfilter \
     libflash_pmic \
     libjpegdhw \
     libjpegdmahw \
     libjpegehw \
     libmmcamera2_c2d_module \
+    libmms_gyro_vstab \
+    libmms_gyro_vstab_auth \
     libmmcamera2_cpp_module \
     libmmcamera2_frame_algorithm \
     libmmcamera2_iface_modules \
@@ -235,24 +226,22 @@ PRODUCT_PACKAGES += \
     libmmcamera2_is \
     libmmcamera2_isp_modules \
     libmmcamera2_mct \
-    libmmcamera2_mct_shimlayer \
     libmmcamera2_pp_buf_mgr \
     libmmcamera2_pproc_modules \
-    libmmcamera2_q3a_core \
     libmmcamera2_sensor_modules \
     libmmcamera2_stats_algorithm \
     libmmcamera2_stats_lib \
-    libmmcamera2_stats_modules \
     libmmcamera_dbg \
+    libmmcamera_dummyalgo \
     libmmcamera_eebinparse \
     libmmcamera_eeprom_util \
     libmmcamera_eztune_module \
     libmmcamera_facedetection_lib \
+    libmmcamera_faceproc \
     libmmcamera_faceproc2 \
     libmmcamera_hdr_gb_lib \
     libmmcamera_imglib \
     libmmcamera_imglib_faceproc_adspstub \
-    libmmcamera_interface \
     libmmcamera_isp_abf48 \
     libmmcamera_isp_aec_bg_stats47 \
     libmmcamera_isp_bf_stats47 \
@@ -306,9 +295,8 @@ PRODUCT_PACKAGES += \
     libmmcamera_sw2d_lib \
     libmmcamera_thread_services \
     libmmcamera_tintless_algo \
+    libmmcamera_tintless_bg_pca_algo \
     libmmjpeg \
-    libmmjpeg_interface \
-    libmmlib2d_interface \
     libmmqjpeg_codec \
     libmmqjpegdma \
     libmpbase \
@@ -317,12 +305,15 @@ PRODUCT_PACKAGES += \
     liboppoalgolib \
     liboppocamalgo_daemon \
     libopposfr \
-    libqomx_core \
     libqomx_jpegdec \
     libqomx_jpegenc \
     libqomx_jpegenc_pipe \
+    libremosaic_daemon \
+    libremosaic_tuning \
+    libremosaiclib \
     libsmwrapper \
     libstface_fd_api \
+    libthread_blur \
     com.qualcomm.qti.dpm.api@1.0 \
     com.qualcomm.qti.imscmservice@1.0 \
     com.qualcomm.qti.imscmservice@2.0 \
@@ -596,3 +587,21 @@ PRODUCT_PACKAGES += \
     time_daemon \
     xtra-daemon \
     dpmd
+
+PRODUCT_PACKAGES += libVDSuperPhotoAPI
+
+PRODUCT_PACKAGES += libfilter
+PRODUCT_PACKAGES += libarcsoft_aiscenedetection
+
+# HAL3 direct-call ArcSoft cores
+PRODUCT_PACKAGES += \
+    libarcsoft_beautyshot \
+    libarcsoft_blink_detection \
+    libarcsoft_blink_detection_CoupleDis \
+    libarcsoft_detection_base \
+    libarcsoft_dualcam_portrait_shot \
+    libarcsoft_dualcam_portraitlighting \
+    libarcsoft_dualcam_refocus_left \
+    libarcsoft_dualcam_refocus_preview \
+    libarcsoft_dualcam_refocus_right \
+    libarcsoft_picbest
