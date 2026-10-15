@@ -590,3 +590,4 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += libVDSuperPhotoAPI
 
 PRODUCT_PACKAGES += libfilter
+PRODUCT_PACKAGES += libarcsoft_aiscenedetection

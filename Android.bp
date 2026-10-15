@@ -14404,3 +14404,18 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_aiscenedetection",
+    owner: "oppo",
+    strip: { none: true },
+    target: {
+        android_arm: {
+            srcs: ["proprietary/vendor/lib/libarcsoft_aiscenedetection.so"],
+            shared_libs: ["liblog", "libdl", "libc", "libm"],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
