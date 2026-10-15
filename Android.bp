@@ -14374,3 +14374,33 @@ cc_prebuilt_binary {
     prefer: true,
     system_ext_specific: true,
 }
+
+cc_prebuilt_library_shared {
+    name: "libVDSuperPhotoAPI",
+    owner: "oppo",
+    strip: { none: true },
+    target: {
+        android_arm: {
+            srcs: ["proprietary/vendor/lib/libVDSuperPhotoAPI.so"],
+            shared_libs: ["liblog", "libGLESv2", "libEGL", "libcdsprpc", "libdl", "libc", "libm"],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libfilter",
+    owner: "oppo",
+    strip: { none: true },
+    target: {
+        android_arm: {
+            srcs: ["proprietary/vendor/lib/libfilter.so"],
+            shared_libs: ["liblog", "libGLESv3", "libEGL", "libc", "libm", "libstdc++_vendor", "libdl"],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}

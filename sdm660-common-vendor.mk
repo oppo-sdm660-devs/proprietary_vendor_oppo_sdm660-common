@@ -585,3 +585,7 @@ PRODUCT_PACKAGES += \
     time_daemon \
     xtra-daemon \
     dpmd
+
+PRODUCT_PACKAGES += libVDSuperPhotoAPI
+
+PRODUCT_PACKAGES += libfilter
