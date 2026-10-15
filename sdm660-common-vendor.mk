@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oppo/sdm660-common
 
 PRODUCT_COPY_FILES += \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/ashdr/ncf_pack.ncf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ashdr/ncf_pack.ncf \
     vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_900p_video_0.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_900p_video_0.config \
     vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_900p_video_0_s5k2p7sq.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_900p_video_0_s5k2p7sq.config \
     vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_1350p_video_0.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_1350p_video_0.config \
