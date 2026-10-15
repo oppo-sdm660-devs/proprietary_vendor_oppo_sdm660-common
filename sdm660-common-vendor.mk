@@ -6,6 +6,10 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oppo/sdm660-common
 
 PRODUCT_COPY_FILES += \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_900p_video_0.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_900p_video_0.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_900p_video_0_s5k2p7sq.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_900p_video_0_s5k2p7sq.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_1350p_video_0.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_1350p_video_0.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_1350p_video_0_s5k2p7sq.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_1350p_video_0_s5k2p7sq.config \
     vendor/oppo/sdm660-common/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/oppo/sdm660-common/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/oppo/sdm660-common/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
@@ -196,8 +200,10 @@ PRODUCT_PACKAGES += \
     libadm \
     libadpcmdec \
     libarcsoft_dualcam_bokeh_api \
+    libarcsoft_dualcam_refocus \
     libarcsoft_hdr_denoise_api \
     libarcsoft_high_dynamic_range \
+    libarcsoft_low_light_hdr \
     libarcsoft_smart_denoise \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
@@ -209,6 +215,8 @@ PRODUCT_PACKAGES += \
     libjpegdmahw \
     libjpegehw \
     libmmcamera2_c2d_module \
+    libmms_gyro_vstab \
+    libmms_gyro_vstab_auth \
     libmmcamera2_cpp_module \
     libmmcamera2_frame_algorithm \
     libmmcamera2_iface_modules \
