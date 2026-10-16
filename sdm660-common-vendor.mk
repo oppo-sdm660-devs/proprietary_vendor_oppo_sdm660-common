@@ -591,3 +591,16 @@ PRODUCT_PACKAGES += libVDSuperPhotoAPI
 
 PRODUCT_PACKAGES += libfilter
 PRODUCT_PACKAGES += libarcsoft_aiscenedetection
+
+# HAL3 direct-call ArcSoft cores (camera/docs/HAL3_PORT_PLATFORM.md 4)
+PRODUCT_PACKAGES += \
+    libarcsoft_beautyshot \
+    libarcsoft_blink_detection \
+    libarcsoft_blink_detection_CoupleDis \
+    libarcsoft_detection_base \
+    libarcsoft_dualcam_portrait_shot \
+    libarcsoft_dualcam_portraitlighting \
+    libarcsoft_dualcam_refocus_left \
+    libarcsoft_dualcam_refocus_preview \
+    libarcsoft_dualcam_refocus_right \
+    libarcsoft_picbest

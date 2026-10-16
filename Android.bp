@@ -14419,3 +14419,153 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_beautyshot",
+    owner: "oppo",
+    strip: { none: true },
+    target: {
+        android_arm: {
+            srcs: ["proprietary/vendor/lib/libarcsoft_beautyshot.so"],
+            shared_libs: ["libmpbase", "liblog", "libdl", "libc", "libm"],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_blink_detection",
+    owner: "oppo",
+    strip: { none: true },
+    target: {
+        android_arm: {
+            srcs: ["proprietary/vendor/lib/libarcsoft_blink_detection.so"],
+            shared_libs: ["liblog", "libdl", "libc", "libm"],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_blink_detection_CoupleDis",
+    owner: "oppo",
+    strip: { none: true },
+    target: {
+        android_arm: {
+            srcs: ["proprietary/vendor/lib/libarcsoft_blink_detection_CoupleDis.so"],
+            shared_libs: ["liblog", "libdl", "libc", "libm"],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_detection_base",
+    owner: "oppo",
+    strip: { none: true },
+    target: {
+        android_arm: {
+            srcs: ["proprietary/vendor/lib/libarcsoft_detection_base.so"],
+            shared_libs: ["liblog", "libdl", "libc", "libm"],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_dualcam_portrait_shot",
+    owner: "oppo",
+    strip: { none: true },
+    target: {
+        android_arm: {
+            srcs: ["proprietary/vendor/lib/libarcsoft_dualcam_portrait_shot.so"],
+            shared_libs: ["libmpbase", "liblog", "libdl", "libc", "libm"],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_dualcam_portraitlighting",
+    owner: "oppo",
+    strip: { none: true },
+    target: {
+        android_arm: {
+            srcs: ["proprietary/vendor/lib/libarcsoft_dualcam_portraitlighting.so"],
+            shared_libs: ["libmpbase", "liblog", "libdl", "libc", "libm"],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_dualcam_refocus_left",
+    owner: "oppo",
+    strip: { none: true },
+    target: {
+        android_arm: {
+            srcs: ["proprietary/vendor/lib/libarcsoft_dualcam_refocus_left.so"],
+            shared_libs: ["libmpbase", "liblog", "libstdc++_vendor", "libm", "libc", "libdl"],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_dualcam_refocus_preview",
+    owner: "oppo",
+    strip: { none: true },
+    target: {
+        android_arm: {
+            srcs: ["proprietary/vendor/lib/libarcsoft_dualcam_refocus_preview.so"],
+            shared_libs: ["libmpbase", "liblog", "libstdc++_vendor", "libm", "libc", "libdl"],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_dualcam_refocus_right",
+    owner: "oppo",
+    strip: { none: true },
+    target: {
+        android_arm: {
+            srcs: ["proprietary/vendor/lib/libarcsoft_dualcam_refocus_right.so"],
+            shared_libs: ["libmpbase", "liblog", "libstdc++_vendor", "libm", "libc", "libdl"],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_picbest",
+    owner: "oppo",
+    strip: { none: true },
+    target: {
+        android_arm: {
+            srcs: ["proprietary/vendor/lib/libarcsoft_picbest.so"],
+            shared_libs: ["libarcsoft_blink_detection", "libarcsoft_detection_base", "liblog", "libdl", "libc", "libm"],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
