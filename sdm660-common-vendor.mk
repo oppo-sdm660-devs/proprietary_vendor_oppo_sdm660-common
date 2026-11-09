@@ -6,12 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oppo/sdm660-common
 
 PRODUCT_COPY_FILES += \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/ashdr/ncf_pack.ncf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ashdr/ncf_pack.ncf \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/ashdr/ncf_pack.ncf:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/ashdr/ncf_pack.ncf \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_900p_video_0.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_900p_video_0.config \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_900p_video_0_s5k2p7sq.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_900p_video_0_s5k2p7sq.config \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_1350p_video_0.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_1350p_video_0.config \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_1350p_video_0_s5k2p7sq.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_1350p_video_0_s5k2p7sq.config \
     vendor/oppo/sdm660-common/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/oppo/sdm660-common/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/oppo/sdm660-common/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
@@ -23,6 +17,35 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/sdm660-common/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
     vendor/oppo/sdm660-common/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
     vendor/oppo/sdm660-common/proprietary/system_ext/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephonyservice.xml \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/ashdr/ncf_pack.ncf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ashdr/ncf_pack.ncf \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/filters_johnny_20.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/filters_johnny_20.json \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/filters_johnny_32.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/filters_johnny_32.json \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/B1VLf4peM:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/B1VLf4peM \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/B1aMqioxf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/B1aMqioxf \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/B1nmcmWbG:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/B1nmcmWbG \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/B1si_XbZz:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/B1si_XbZz \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/BJJAwoigM:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/BJJAwoigM \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/BJyKIwqxz:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/BJyKIwqxz \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/ByW7g4bbf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/ByW7g4bbf \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/ByYo3If:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/ByYo3If \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/BycYf7WWz:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/BycYf7WWz \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/EyxRbD2UCe:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/EyxRbD2UCe \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/SJ3mbr6ef:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/SJ3mbr6ef \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/SkpZ8ebbz:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/SkpZ8ebbz \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/Sy4uLSTgf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/Sy4uLSTgf \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/Syt2KeZZf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/Syt2KeZZf \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/default:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/default \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/f_bin_hideaki:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/f_bin_hideaki \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/f_candy_water_weak.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/f_candy_water_weak.cube.rgb.bin \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/f_contrast_gray_face_dark:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/f_contrast_gray_face_dark \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/f_fuji_strong.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/f_fuji_strong.cube.rgb.bin \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/f_japan_strong.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/f_japan_strong.cube.rgb.bin \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/r1JaFSZZG:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/r1JaFSZZG \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/r1PrfoolG:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/r1PrfoolG \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/rJ5g5vPWG:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/rJ5g5vPWG \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/rJxJtmaez:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/rJxJtmaez \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/rkMhq4ZWf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/rkMhq4ZWf \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/rkx5u4Zbf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/rkx5u4Zbf \
     vendor/oppo/sdm660-common/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
     vendor/oppo/sdm660-common/proprietary/vendor/etc/cne/profileMwqem.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/profileMwqem.xml \
     vendor/oppo/sdm660-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
@@ -76,6 +99,7 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/sdm660-common/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/oppo/sdm660-common/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/oppo/sdm660-common/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/permissions/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml \
     vendor/oppo/sdm660-common/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
     vendor/oppo/sdm660-common/proprietary/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     vendor/oppo/sdm660-common/proprietary/vendor/etc/sensors/sensor_def_16051.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_16051.conf \
@@ -93,6 +117,43 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/sdm660-common/proprietary/vendor/etc/sensors/sensor_def_18323.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_18323.conf \
     vendor/oppo/sdm660-common/proprietary/vendor/etc/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf \
     vendor/oppo/sdm660-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/GyroOffset_db.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/GyroOffset_db.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/fsync_db.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/fsync_db.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_1080p_preview.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_1080p_preview.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_1080p_preview_0_imx519_bmi.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_1080p_preview_0_imx519_bmi.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_1080p_preview_0_imx519_lsm.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_1080p_preview_0_imx519_lsm.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_1080p_video_0.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_1080p_video_0.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_1080p_video_0_imx519_bmi.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_1080p_video_0_imx519_bmi.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_1080p_video_0_imx519_lsm.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_1080p_video_0_imx519_lsm.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_1080p_video_0_s5k2p7sq.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_1080p_video_0_s5k2p7sq.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_1080p_video_0_s5k2p7sq_sfov.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_1080p_video_0_s5k2p7sq_sfov.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_1080p_video_0_s5k2p7sq_sfov_bmi.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_1080p_video_0_s5k2p7sq_sfov_bmi.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_1080p_video_0_s5k2p7sq_sfov_main.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_1080p_video_0_s5k2p7sq_sfov_main.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_1080p_video_0_sfov.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_1080p_video_0_sfov.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_1080p_video_0_sfov_lsm.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_1080p_video_0_sfov_lsm.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_1080p_video_0_sfov_main.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_1080p_video_0_sfov_main.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_1080p_video_1.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_1080p_video_1.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_1350p_video_0.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_1350p_video_0.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_1350p_video_0_s5k2p7sq.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_1350p_video_0_s5k2p7sq.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_4k_preview.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_4k_preview.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_4k_video_0.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_4k_video_0.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_4k_video_1.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_4k_video_1.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_720p_preview.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_720p_preview.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_720p_preview_0_imx519_bmi.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_720p_preview_0_imx519_bmi.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_720p_preview_0_imx519_lsm.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_720p_preview_0_imx519_lsm.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_720p_video_0.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_720p_video_0.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_720p_video_0_imx519_bmi.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_720p_video_0_imx519_bmi.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_720p_video_0_imx519_lsm.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_720p_video_0_imx519_lsm.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_720p_video_0_s5k2p7sq.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_720p_video_0_s5k2p7sq.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_720p_video_0_s5k2p7sq_sfov.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_720p_video_0_s5k2p7sq_sfov.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_720p_video_0_s5k2p7sq_sfov_bmi.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_720p_video_0_s5k2p7sq_sfov_bmi.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_720p_video_0_s5k2p7sq_sfov_main.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_720p_video_0_s5k2p7sq_sfov_main.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_720p_video_0_sfov.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_720p_video_0_sfov.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_720p_video_0_sfov_lsm.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_720p_video_0_sfov_lsm.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_720p_video_0_sfov_main.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_720p_video_0_sfov_main.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_720p_video_1.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_720p_video_1.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_900p_video_0.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_900p_video_0.config \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/vstab_configs/vstab_db_900p_video_0_s5k2p7sq.config:$(TARGET_COPY_OUT_VENDOR)/etc/vstab_configs/vstab_db_900p_video_0_s5k2p7sq.config \
     vendor/oppo/sdm660-common/proprietary/vendor/firmware/cpp_firmware_v1_12_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_12_0.fw \
     vendor/oppo/sdm660-common/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
     vendor/oppo/sdm660-common/proprietary/vendor/firmware/widevine.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.b00 \
@@ -196,29 +257,45 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
     libOppoPreviewBokeh \
     libPolarrRender \
+    libPolarrRenderJNI \
     libSTDualCamPreviewBokeh \
     libSTdisp \
+    libSensorManagerHAL \
     libSonyIMX376RmscLibrary \
+    libStDualCam \
+    libVDSelfiePanorama \
+    libVDSuperPhotoAPI \
+    libVDUpScale \
     libadm \
     libadpcmdec \
+    libarcsoft_aiscenedetection \
+    libarcsoft_beautyshot \
+    libarcsoft_blink_detection \
+    libarcsoft_blink_detection_CoupleDis \
+    libarcsoft_detection_base \
     libarcsoft_dualcam_bokeh_api \
+    libarcsoft_dualcam_portrait_shot \
+    libarcsoft_dualcam_portraitlighting \
     libarcsoft_dualcam_refocus \
+    libarcsoft_dualcam_refocus_left \
+    libarcsoft_dualcam_refocus_preview \
+    libarcsoft_dualcam_refocus_right \
     libarcsoft_hdr_denoise_api \
     libarcsoft_high_dynamic_range \
     libarcsoft_low_light_hdr \
+    libarcsoft_picbest \
     libarcsoft_smart_denoise \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
     libblur_channel \
     libcamera_core_hwi \
     libfastcrc \
+    libfilter \
     libflash_pmic \
     libjpegdhw \
     libjpegdmahw \
     libjpegehw \
     libmmcamera2_c2d_module \
-    libmms_gyro_vstab \
-    libmms_gyro_vstab_auth \
     libmmcamera2_cpp_module \
     libmmcamera2_frame_algorithm \
     libmmcamera2_iface_modules \
@@ -299,6 +376,10 @@ PRODUCT_PACKAGES += \
     libmmjpeg \
     libmmqjpeg_codec \
     libmmqjpegdma \
+    libmms_gyro_vstab \
+    libmms_gyro_vstab_auth \
+    libmms_hal_vstab \
+    libmms_warper_vstab \
     libmpbase \
     libocam_common \
     liboppo_platform_hwi \
@@ -587,21 +668,3 @@ PRODUCT_PACKAGES += \
     time_daemon \
     xtra-daemon \
     dpmd
-
-PRODUCT_PACKAGES += libVDSuperPhotoAPI
-
-PRODUCT_PACKAGES += libfilter
-PRODUCT_PACKAGES += libarcsoft_aiscenedetection
-
-# HAL3 direct-call ArcSoft cores
-PRODUCT_PACKAGES += \
-    libarcsoft_beautyshot \
-    libarcsoft_blink_detection \
-    libarcsoft_blink_detection_CoupleDis \
-    libarcsoft_detection_base \
-    libarcsoft_dualcam_portrait_shot \
-    libarcsoft_dualcam_portraitlighting \
-    libarcsoft_dualcam_refocus_left \
-    libarcsoft_dualcam_refocus_preview \
-    libarcsoft_dualcam_refocus_right \
-    libarcsoft_picbest

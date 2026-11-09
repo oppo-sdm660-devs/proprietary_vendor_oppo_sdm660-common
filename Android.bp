@@ -3407,6 +3407,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libPolarrRenderJNI",
+    owner: "oppo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libPolarrRenderJNI.so",
+            ],
+            shared_libs: [
+                "libGLESv3",
+                "libandroid",
+                "liblog",
+                "libEGL",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libSTDualCamPreviewBokeh",
     owner: "oppo",
     strip: {
@@ -3461,6 +3488,36 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libSensorManagerHAL",
+    owner: "oppo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libSensorManagerHAL.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libhidltransport",
+                "android.frameworks.sensorservice@1.0",
+                "liblog",
+                "libbase",
+                "libutils",
+                "libc++",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libSonyIMX376RmscLibrary",
     owner: "oppo",
     strip: {
@@ -3477,6 +3534,110 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libc",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libStDualCam",
+    owner: "oppo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libStDualCam.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libm",
+                "libdl",
+                "libz",
+                "libOpenCL",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libVDSelfiePanorama",
+    owner: "oppo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libVDSelfiePanorama.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libGLESv2",
+                "libEGL",
+                "libjnigraphics",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libVDSuperPhotoAPI",
+    owner: "oppo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libVDSuperPhotoAPI.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libGLESv2",
+                "libEGL",
+                "libcdsprpc",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libVDUpScale",
+    owner: "oppo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libVDUpScale.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdl",
+                "libc",
+                "libm",
             ],
         },
     },
@@ -3537,6 +3698,127 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libarcsoft_aiscenedetection",
+    owner: "oppo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libarcsoft_aiscenedetection.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_beautyshot",
+    owner: "oppo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libarcsoft_beautyshot.so",
+            ],
+            shared_libs: [
+                "libmpbase",
+                "liblog",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_blink_detection",
+    owner: "oppo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libarcsoft_blink_detection.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_blink_detection_CoupleDis",
+    owner: "oppo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libarcsoft_blink_detection_CoupleDis.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_detection_base",
+    owner: "oppo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libarcsoft_detection_base.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libarcsoft_dualcam_bokeh_api",
     owner: "oppo",
     strip: {
@@ -3546,6 +3828,159 @@ cc_prebuilt_library_shared {
         android_arm: {
             srcs: [
                 "proprietary/vendor/lib/libarcsoft_dualcam_bokeh_api.so",
+            ],
+            shared_libs: [
+                "libmpbase",
+                "liblog",
+                "libstdc++_vendor",
+                "libm",
+                "libc",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_dualcam_portrait_shot",
+    owner: "oppo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libarcsoft_dualcam_portrait_shot.so",
+            ],
+            shared_libs: [
+                "libmpbase",
+                "liblog",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_dualcam_portraitlighting",
+    owner: "oppo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libarcsoft_dualcam_portraitlighting.so",
+            ],
+            shared_libs: [
+                "libmpbase",
+                "liblog",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_dualcam_refocus",
+    owner: "oppo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libarcsoft_dualcam_refocus.so",
+            ],
+            shared_libs: [
+                "libmpbase",
+                "liblog",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_dualcam_refocus_left",
+    owner: "oppo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libarcsoft_dualcam_refocus_left.so",
+            ],
+            shared_libs: [
+                "libmpbase",
+                "liblog",
+                "libstdc++_vendor",
+                "libm",
+                "libc",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_dualcam_refocus_preview",
+    owner: "oppo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libarcsoft_dualcam_refocus_preview.so",
+            ],
+            shared_libs: [
+                "libmpbase",
+                "liblog",
+                "libstdc++_vendor",
+                "libm",
+                "libc",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_dualcam_refocus_right",
+    owner: "oppo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libarcsoft_dualcam_refocus_right.so",
             ],
             shared_libs: [
                 "libmpbase",
@@ -3615,58 +4050,49 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libarcsoft_dualcam_refocus",
-    owner: "oppo",
-    strip: { none: true },
-    target: {
-        android_arm: {
-            srcs: ["proprietary/vendor/lib/libarcsoft_dualcam_refocus.so"],
-            shared_libs: ["libmpbase", "liblog", "libdl", "libc", "libm"],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmms_gyro_vstab",
-    owner: "oppo",
-    strip: { none: true },
-    target: {
-        android_arm: {
-            srcs: ["proprietary/vendor/lib/libmms_gyro_vstab.so"],
-            shared_libs: ["libmms_gyro_vstab_auth", "liblog", "libdl", "libc", "libm"],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmms_gyro_vstab_auth",
-    owner: "oppo",
-    strip: { none: true },
-    target: {
-        android_arm: {
-            srcs: ["proprietary/vendor/lib/libmms_gyro_vstab_auth.so"],
-            shared_libs: ["libcutils", "liblog", "libdl", "libc", "libm"],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libarcsoft_low_light_hdr",
     owner: "oppo",
-    strip: { none: true },
+    strip: {
+        none: true,
+    },
     target: {
         android_arm: {
-            srcs: ["proprietary/vendor/lib/libarcsoft_low_light_hdr.so"],
-            shared_libs: ["libmpbase", "liblog", "libdl", "libc", "libm"],
+            srcs: [
+                "proprietary/vendor/lib/libarcsoft_low_light_hdr.so",
+            ],
+            shared_libs: [
+                "libmpbase",
+                "liblog",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_picbest",
+    owner: "oppo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libarcsoft_picbest.so",
+            ],
+            shared_libs: [
+                "libarcsoft_blink_detection",
+                "libarcsoft_detection_base",
+                "liblog",
+                "libdl",
+                "libc",
+                "libm",
+            ],
         },
     },
     compile_multilib: "32",
@@ -3841,6 +4267,33 @@ cc_prebuilt_library_shared {
                 "libc++",
                 "libc",
                 "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libfilter",
+    owner: "oppo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libfilter.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libGLESv3",
+                "libEGL",
+                "libc",
+                "libm",
+                "libstdc++_vendor",
                 "libdl",
             ],
         },
@@ -6308,6 +6761,112 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmms_gyro_vstab",
+    owner: "oppo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libmms_gyro_vstab.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libmms_gyro_vstab_auth",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmms_gyro_vstab_auth",
+    owner: "oppo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libmms_gyro_vstab_auth.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmms_hal_vstab",
+    owner: "oppo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libmms_hal_vstab.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libui",
+                "libmms_gyro_vstab",
+                "libmms_warper_vstab",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmms_warper_vstab",
+    owner: "oppo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libmms_warper_vstab.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libEGL",
+                "libGLESv2",
+                "libutils",
+                "libui",
+                "libdl",
+                "libc",
+                "libm",
             ],
         },
     },
@@ -14373,199 +14932,4 @@ cc_prebuilt_binary {
     },
     prefer: true,
     system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libVDSuperPhotoAPI",
-    owner: "oppo",
-    strip: { none: true },
-    target: {
-        android_arm: {
-            srcs: ["proprietary/vendor/lib/libVDSuperPhotoAPI.so"],
-            shared_libs: ["liblog", "libGLESv2", "libEGL", "libcdsprpc", "libdl", "libc", "libm"],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libfilter",
-    owner: "oppo",
-    strip: { none: true },
-    target: {
-        android_arm: {
-            srcs: ["proprietary/vendor/lib/libfilter.so"],
-            shared_libs: ["liblog", "libGLESv3", "libEGL", "libc", "libm", "libstdc++_vendor", "libdl"],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libarcsoft_aiscenedetection",
-    owner: "oppo",
-    strip: { none: true },
-    target: {
-        android_arm: {
-            srcs: ["proprietary/vendor/lib/libarcsoft_aiscenedetection.so"],
-            shared_libs: ["liblog", "libdl", "libc", "libm"],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libarcsoft_beautyshot",
-    owner: "oppo",
-    strip: { none: true },
-    target: {
-        android_arm: {
-            srcs: ["proprietary/vendor/lib/libarcsoft_beautyshot.so"],
-            shared_libs: ["libmpbase", "liblog", "libdl", "libc", "libm"],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libarcsoft_blink_detection",
-    owner: "oppo",
-    strip: { none: true },
-    target: {
-        android_arm: {
-            srcs: ["proprietary/vendor/lib/libarcsoft_blink_detection.so"],
-            shared_libs: ["liblog", "libdl", "libc", "libm"],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libarcsoft_blink_detection_CoupleDis",
-    owner: "oppo",
-    strip: { none: true },
-    target: {
-        android_arm: {
-            srcs: ["proprietary/vendor/lib/libarcsoft_blink_detection_CoupleDis.so"],
-            shared_libs: ["liblog", "libdl", "libc", "libm"],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libarcsoft_detection_base",
-    owner: "oppo",
-    strip: { none: true },
-    target: {
-        android_arm: {
-            srcs: ["proprietary/vendor/lib/libarcsoft_detection_base.so"],
-            shared_libs: ["liblog", "libdl", "libc", "libm"],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libarcsoft_dualcam_portrait_shot",
-    owner: "oppo",
-    strip: { none: true },
-    target: {
-        android_arm: {
-            srcs: ["proprietary/vendor/lib/libarcsoft_dualcam_portrait_shot.so"],
-            shared_libs: ["libmpbase", "liblog", "libdl", "libc", "libm"],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libarcsoft_dualcam_portraitlighting",
-    owner: "oppo",
-    strip: { none: true },
-    target: {
-        android_arm: {
-            srcs: ["proprietary/vendor/lib/libarcsoft_dualcam_portraitlighting.so"],
-            shared_libs: ["libmpbase", "liblog", "libdl", "libc", "libm"],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libarcsoft_dualcam_refocus_left",
-    owner: "oppo",
-    strip: { none: true },
-    target: {
-        android_arm: {
-            srcs: ["proprietary/vendor/lib/libarcsoft_dualcam_refocus_left.so"],
-            shared_libs: ["libmpbase", "liblog", "libstdc++_vendor", "libm", "libc", "libdl"],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libarcsoft_dualcam_refocus_preview",
-    owner: "oppo",
-    strip: { none: true },
-    target: {
-        android_arm: {
-            srcs: ["proprietary/vendor/lib/libarcsoft_dualcam_refocus_preview.so"],
-            shared_libs: ["libmpbase", "liblog", "libstdc++_vendor", "libm", "libc", "libdl"],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libarcsoft_dualcam_refocus_right",
-    owner: "oppo",
-    strip: { none: true },
-    target: {
-        android_arm: {
-            srcs: ["proprietary/vendor/lib/libarcsoft_dualcam_refocus_right.so"],
-            shared_libs: ["libmpbase", "liblog", "libstdc++_vendor", "libm", "libc", "libdl"],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libarcsoft_picbest",
-    owner: "oppo",
-    strip: { none: true },
-    target: {
-        android_arm: {
-            srcs: ["proprietary/vendor/lib/libarcsoft_picbest.so"],
-            shared_libs: ["libarcsoft_blink_detection", "libarcsoft_detection_base", "liblog", "libdl", "libc", "libm"],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
 }
