@@ -6831,6 +6831,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libmms_hal_vstab.so",
             ],
             shared_libs: [
+                "libui_vstab_shim",
                 "liblog",
                 "libutils",
                 "libui",
@@ -6859,6 +6860,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libmms_warper_vstab.so",
             ],
             shared_libs: [
+                "libui_vstab_shim",
                 "liblog",
                 "libEGL",
                 "libGLESv2",
