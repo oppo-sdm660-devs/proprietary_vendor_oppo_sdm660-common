@@ -18,34 +18,6 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/sdm660-common/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
     vendor/oppo/sdm660-common/proprietary/system_ext/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephonyservice.xml \
     vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/ashdr/ncf_pack.ncf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ashdr/ncf_pack.ncf \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/filters_johnny_20.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/filters_johnny_20.json \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/filters_johnny_32.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/filters_johnny_32.json \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/B1VLf4peM:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/B1VLf4peM \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/B1aMqioxf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/B1aMqioxf \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/B1nmcmWbG:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/B1nmcmWbG \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/B1si_XbZz:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/B1si_XbZz \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/BJJAwoigM:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/BJJAwoigM \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/BJyKIwqxz:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/BJyKIwqxz \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/ByW7g4bbf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/ByW7g4bbf \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/ByYo3If:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/ByYo3If \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/BycYf7WWz:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/BycYf7WWz \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/EyxRbD2UCe:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/EyxRbD2UCe \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/SJ3mbr6ef:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/SJ3mbr6ef \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/SkpZ8ebbz:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/SkpZ8ebbz \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/Sy4uLSTgf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/Sy4uLSTgf \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/Syt2KeZZf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/Syt2KeZZf \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/default:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/default \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/f_bin_hideaki:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/f_bin_hideaki \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/f_candy_water_weak.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/f_candy_water_weak.cube.rgb.bin \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/f_contrast_gray_face_dark:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/f_contrast_gray_face_dark \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/f_fuji_strong.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/f_fuji_strong.cube.rgb.bin \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/f_japan_strong.cube.rgb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/f_japan_strong.cube.rgb.bin \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/r1JaFSZZG:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/r1JaFSZZG \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/r1PrfoolG:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/r1PrfoolG \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/rJ5g5vPWG:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/rJ5g5vPWG \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/rJxJtmaez:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/rJxJtmaez \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/rkMhq4ZWf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/rkMhq4ZWf \
-    vendor/oppo/sdm660-common/proprietary/vendor/etc/camera/oppo_filters/luts/rkx5u4Zbf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/oppo_filters/luts/rkx5u4Zbf \
     vendor/oppo/sdm660-common/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
     vendor/oppo/sdm660-common/proprietary/vendor/etc/cne/profileMwqem.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/profileMwqem.xml \
     vendor/oppo/sdm660-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
@@ -185,6 +157,7 @@ PRODUCT_PACKAGES += \
     vulkan.adreno \
     libC2D2 \
     libCB \
+    libOmxVenc \
     libOpenCL \
     libQSEEComAPI \
     libVkLayer_q3dtools \
@@ -257,25 +230,15 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
     libOppoPreviewBokeh \
     libPolarrRender \
-    libPolarrRenderJNI \
     libSTDualCamPreviewBokeh \
     libSTdisp \
     libSensorManagerHAL \
     libSonyIMX376RmscLibrary \
     libStDualCam \
-    libVDSelfiePanorama \
-    libVDSuperPhotoAPI \
-    libVDUpScale \
     libadm \
     libadpcmdec \
-    libarcsoft_aiscenedetection \
-    libarcsoft_beautyshot \
-    libarcsoft_blink_detection \
-    libarcsoft_blink_detection_CoupleDis \
-    libarcsoft_detection_base \
     libarcsoft_dualcam_bokeh_api \
     libarcsoft_dualcam_portrait_shot \
-    libarcsoft_dualcam_portraitlighting \
     libarcsoft_dualcam_refocus \
     libarcsoft_dualcam_refocus_left \
     libarcsoft_dualcam_refocus_preview \
@@ -283,14 +246,12 @@ PRODUCT_PACKAGES += \
     libarcsoft_hdr_denoise_api \
     libarcsoft_high_dynamic_range \
     libarcsoft_low_light_hdr \
-    libarcsoft_picbest \
     libarcsoft_smart_denoise \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
     libblur_channel \
     libcamera_core_hwi \
     libfastcrc \
-    libfilter \
     libflash_pmic \
     libjpegdhw \
     libjpegdmahw \
@@ -485,12 +446,6 @@ PRODUCT_PACKAGES += \
     libril-qcril-hook-oem \
     librilqmiservices \
     librpmb \
-    libscveCommon \
-    libscveCommon_stub \
-    libscveObjectSegmentation \
-    libscveObjectSegmentation_stub \
-    libscveObjectTracker \
-    libscveObjectTracker_stub \
     libsecureui_svcsock \
     libsettings \
     libssd \
@@ -560,8 +515,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.uim_remote_client@1.1 \
     vendor.qti.hardware.radio.uim_remote_client@1.2 \
     vendor.qti.hardware.radio.uim_remote_server@1.0 \
-    vendor.qti.hardware.scve.objecttracker@1.0 \
-    vendor.qti.hardware.scve.panorama@1.0 \
     vendor.qti.hardware.slmadapter@1.0 \
     vendor.qti.hardware.tui_comm@1.0 \
     vendor.qti.ims.callcapability@1.0 \
@@ -579,8 +532,6 @@ PRODUCT_PACKAGES += \
     libFastRPC_AUE_Forward_skel \
     libFastRPC_UTF_Forward_800h_skel \
     libFastRPC_UTF_Forward_Qtc2_skel \
-    libVDHexagonBlurless_v2_skel \
-    libVDHexagonSuperPhoto_skel \
     libadsp_fd_skel \
     libadsp_hvx_add_constant \
     libadsp_hvx_skel \
@@ -590,9 +541,6 @@ PRODUCT_PACKAGES += \
     libdspCV_skel \
     libfastcvadsp \
     libfastcvadsp_skel \
-    libscveBlobDescriptor_skel \
-    libscveObjectSegmentation_skel \
-    libscveT2T_skel \
     libthread_blur_skel \
     libvpp_svc_skel \
     com.qualcomm.qti.dpm.api@1.0_vendor \

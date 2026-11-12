@@ -467,6 +467,51 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libOmxVenc",
+    owner: "oppo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libOmxVenc.so",
+            ],
+            shared_libs: [
+                "libc2dcolorconvert",
+                "libcutils",
+                "libion",
+                "liblog",
+                "libqdMetaData",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libOmxVenc.so",
+            ],
+            shared_libs: [
+                "libc2dcolorconvert",
+                "libcutils",
+                "libion",
+                "liblog",
+                "libqdMetaData",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libOpenCL",
     owner: "oppo",
     strip: {
@@ -3407,33 +3452,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libPolarrRenderJNI",
-    owner: "oppo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libPolarrRenderJNI.so",
-            ],
-            shared_libs: [
-                "libGLESv3",
-                "libandroid",
-                "liblog",
-                "libEGL",
-                "libm",
-                "libdl",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libSTDualCamPreviewBokeh",
     owner: "oppo",
     strip: {
@@ -3569,84 +3587,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libVDSelfiePanorama",
-    owner: "oppo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libVDSelfiePanorama.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libGLESv2",
-                "libEGL",
-                "libjnigraphics",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libVDSuperPhotoAPI",
-    owner: "oppo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libVDSuperPhotoAPI.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libGLESv2",
-                "libEGL",
-                "libcdsprpc",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libVDUpScale",
-    owner: "oppo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libVDUpScale.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libadm",
     owner: "oppo",
     strip: {
@@ -3698,127 +3638,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libarcsoft_aiscenedetection",
-    owner: "oppo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libarcsoft_aiscenedetection.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libarcsoft_beautyshot",
-    owner: "oppo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libarcsoft_beautyshot.so",
-            ],
-            shared_libs: [
-                "libmpbase",
-                "liblog",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libarcsoft_blink_detection",
-    owner: "oppo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libarcsoft_blink_detection.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libarcsoft_blink_detection_CoupleDis",
-    owner: "oppo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libarcsoft_blink_detection_CoupleDis.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libarcsoft_detection_base",
-    owner: "oppo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libarcsoft_detection_base.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libarcsoft_dualcam_bokeh_api",
     owner: "oppo",
     strip: {
@@ -3854,31 +3673,6 @@ cc_prebuilt_library_shared {
         android_arm: {
             srcs: [
                 "proprietary/vendor/lib/libarcsoft_dualcam_portrait_shot.so",
-            ],
-            shared_libs: [
-                "libmpbase",
-                "liblog",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libarcsoft_dualcam_portraitlighting",
-    owner: "oppo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libarcsoft_dualcam_portraitlighting.so",
             ],
             shared_libs: [
                 "libmpbase",
@@ -4075,32 +3869,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libarcsoft_picbest",
-    owner: "oppo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libarcsoft_picbest.so",
-            ],
-            shared_libs: [
-                "libarcsoft_blink_detection",
-                "libarcsoft_detection_base",
-                "liblog",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libarcsoft_smart_denoise",
     owner: "oppo",
     strip: {
@@ -4267,33 +4035,6 @@ cc_prebuilt_library_shared {
                 "libc++",
                 "libc",
                 "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libfilter",
-    owner: "oppo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libfilter.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libGLESv3",
-                "libEGL",
-                "libc",
-                "libm",
-                "libstdc++_vendor",
                 "libdl",
             ],
         },
@@ -10103,169 +9844,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libscveCommon",
-    owner: "oppo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libscveCommon.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libion",
-                "libscveCommon_stub",
-                "libcdsprpc",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libscveCommon_stub",
-    owner: "oppo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libscveCommon_stub.so",
-            ],
-            shared_libs: [
-                "libcdsprpc",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libscveObjectSegmentation",
-    owner: "oppo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libscveObjectSegmentation.so",
-            ],
-            shared_libs: [
-                "libOpenCL",
-                "liblog",
-                "libfastcvopt",
-                "libscveCommon",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libscveObjectSegmentation_stub",
-    owner: "oppo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libscveObjectSegmentation_stub.so",
-            ],
-            shared_libs: [
-                "libscveCommon",
-                "libcdsprpc",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libscveObjectTracker",
-    owner: "oppo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libscveObjectTracker.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libfastcvopt",
-                "libscveCommon",
-                "libscveObjectSegmentation",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libscveObjectTracker_stub",
-    owner: "oppo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libscveObjectTracker_stub.so",
-            ],
-            shared_libs: [
-                "libfastcvopt",
-                "liblog",
-                "libscveCommon",
-                "libcdsprpc",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libsecureui_svcsock",
     owner: "oppo",
     strip: {
@@ -12364,66 +11942,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.scve.objecttracker@1.0",
-    owner: "oppo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libhidltransport",
-                "libhwbinder",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.scve.panorama@1.0",
-    owner: "oppo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libhidltransport",
-                "libhwbinder",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.slmadapter@1.0",
     owner: "oppo",
     strip: {
@@ -12797,24 +12315,6 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libVDHexagonBlurless_v2_skel",
-    filename: "libVDHexagonBlurless_v2_skel.so",
-    owner: "oppo",
-    src: "proprietary/vendor/lib/rfsa/adsp/libVDHexagonBlurless_v2_skel.so",
-    relative_install_path: "adsp",
-    soc_specific: true,
-}
-
-prebuilt_rfsa {
-    name: "libVDHexagonSuperPhoto_skel",
-    filename: "libVDHexagonSuperPhoto_skel.so",
-    owner: "oppo",
-    src: "proprietary/vendor/lib/rfsa/adsp/libVDHexagonSuperPhoto_skel.so",
-    relative_install_path: "adsp",
-    soc_specific: true,
-}
-
-prebuilt_rfsa {
     name: "libadsp_fd_skel",
     filename: "libadsp_fd_skel.so",
     owner: "oppo",
@@ -12891,33 +12391,6 @@ prebuilt_rfsa {
     filename: "libfastcvadsp_skel.so",
     owner: "oppo",
     src: "proprietary/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so",
-    relative_install_path: "adsp",
-    soc_specific: true,
-}
-
-prebuilt_rfsa {
-    name: "libscveBlobDescriptor_skel",
-    filename: "libscveBlobDescriptor_skel.so",
-    owner: "oppo",
-    src: "proprietary/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so",
-    relative_install_path: "adsp",
-    soc_specific: true,
-}
-
-prebuilt_rfsa {
-    name: "libscveObjectSegmentation_skel",
-    filename: "libscveObjectSegmentation_skel.so",
-    owner: "oppo",
-    src: "proprietary/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so",
-    relative_install_path: "adsp",
-    soc_specific: true,
-}
-
-prebuilt_rfsa {
-    name: "libscveT2T_skel",
-    filename: "libscveT2T_skel.so",
-    owner: "oppo",
-    src: "proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so",
     relative_install_path: "adsp",
     soc_specific: true,
 }
